@@ -2,118 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mahnoor Omer</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #fefefe;
-      color: #222;
-      line-height: 1.6;
+      background-color: #f0f4f8;
+      color: #333;
     }
-
     header {
-      background: #111;
+      background: linear-gradient(to right, #2c3e50, #3498db);
       color: white;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
     }
-
     header h1 {
-      margin-bottom: 0.5rem;
-      font-size: 2.5rem;
+      margin: 0;
+      font-size: 3rem;
     }
-
     header p {
-      font-style: italic;
-      color: #bbb;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
-
     section {
-      padding: 2rem 1.5rem;
-      max-width: 800px;
-      margin: auto;
+      padding: 3rem 2rem;
+      margin: 2rem auto;
+      max-width: 1000px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
     }
-
-    h2 {
-      color: #333;
-      border-bottom: 2px solid #eee;
+    section h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
       padding-bottom: 0.5rem;
     }
-
-    .highlight {
-      color: #007acc;
+    .skills-list, .achievements-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
     }
-
-    footer {
-      background: #111;
-      color: #eee;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+    .skills-list span, .achievements-list li {
+      background-color: #3498db;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
     }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      section {
-        padding: 1.5rem 1rem;
-      }
+    .images-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .images-container img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Mahnoor Omer</h1>
-    <p><em>“In motion, always — on the field, in the world, in life.”</em></p>
+    <p>Sporty. Wild. Data-Driven. Always Moving Forward.</p>
   </header>
 
   <section>
     <h2>About Me</h2>
-    <p>Hello! I'm Mahnoor, a boundary-pusher with a love for action, creation, and exploration. Whether it's a new idea or a new place, I’m always ready to dive in and make it count.</p>
-  </section>
-
-  <section>
-    <h2>Passions</h2>
-    <p>From tennis courts to trekking trails, and from community service to creative projects, I thrive where there's energy and purpose. My passions drive me to learn, lead, and leave a mark.</p>
-  </section>
-
-  <section>
-    <h2>Achievements</h2>
-    <ul>
-      <li>🏆 Winner of [Insert competition or award name]</li>
-      <li>🎓 Top scorer in [Subject or test]</li>
-      <li>🌍 Led [NGO/project name] initiatives for community change</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Passion Project</h2>
-    <p>I’m currently building a passion project that reflects what I care about — whether it's solving data challenges, designing for social impact, or helping communities access digital tools. Details coming soon!</p>
+    <p>I’m Mahnoor Omer — an A2 student at LGS 55 Main, currently studying Economics, Maths, and Computer Science. I’m passionate about data and how it can be used to solve real-world problems, which is why I aim to become a data scientist.</p>
+    <p>Outside academics, I’m deeply into sports — I love playing all kinds and take pride in being really good at them. Whether it’s on the field or with data, I’m always ready to bring energy, strategy, and drive.</p>
   </section>
 
   <section>
     <h2>Skills</h2>
-    <ul>
-      <li>Leadership & Teamwork</li>
-      <li>Web Design (HTML/CSS)</li>
-      <li>Creative Writing & Branding</li>
-      <li>Community Organizing</li>
-    </ul>
+    <div class="skills-list">
+      <span>Leadership</span>
+      <span>Coding</span>
+      <span>Communication</span>
+      <span>Sports</span>
+      <span>Problem Solving</span>
+      <span>Economics</span>
+      <span>Creativity</span>
+      <span>Public Speaking</span>
+    </div>
   </section>
 
   <section>
-    <h2>Contact</h2>
-    <p>You can reach me at <strong>your.email@example.com</strong> or find me on Instagram and LinkedIn soon!</p>
+    <h2>Passions</h2>
+    <p>I'm a national-level tennis player and passionate about travel — I've been to over 58 countries across Europe, North America, Africa, and Asia. I’m driven by the desire to create something meaningful using data science to help people on a large scale.</p>
+    <div class="images-container">
+      <img src="https://source.unsplash.com/featured/?tennis" alt="Tennis" />
+      <img src="https://source.unsplash.com/featured/?travel" alt="Travel" />
+      <img src="https://source.unsplash.com/featured/?data" alt="Data" />
+      <img src="https://source.unsplash.com/featured/?mountains" alt="Mountains" />
+      <img src="https://source.unsplash.com/featured/?ocean" alt="Ocean" />
+    </div>
   </section>
 
-  <footer>
-    &copy; 2025 Mahnoor Omer. All rights reserved.
-  </footer>
+  <section>
+    <h2>Achievements</h2>
+    <ul class="achievements-list">
+      <li>Worked with CSR-S, Juni Research Program, and Veritas</li>
+      <li>Runner-up in multiple national competitions</li>
+      <li>Former #6 nationally ranked under-18 female tennis player in Pakistan</li>
+      <li>Numerous awards in academics and extracurriculars</li>
+    </ul>
+  </section>
 
 </body>
 </html>
+
